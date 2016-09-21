@@ -1,0 +1,58 @@
+body {
+	background-image: url(img/9824.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #666;
+	font-size: 1.5em;
+	font-family: Calibri, sans-serif;
+}
+
+div.form {
+	margin-top: 50px;
+	padding: 20px;
+	border: 3px solid #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+h2 {
+	text-align: center;
+	font-size: 2em;
+	margin-top: 0;
+}
+
+.btn-success {
+	background-color: #b3ca45;
+	border-color: #8fa237;
+}
+
+.btn-success:hover {
+	background-color: #8fa237;
+	border-color: #8fa237;
+}
+
+.btn[disabled],
+.btn[disabled]:hover {
+	background-color: #ccc;
+	color: #555;
+	border-color: #555;
+}
+
+input.form-control:focus {
+	border-color: #b9ce4b;
+	-webkit-box-shadow: inset 0 1px 3px rgba(161, 193, 6, 0.75);
+	-moz-box-shadow: inset 0 1px 3px rgba(161, 193, 6, 0.75);
+	box-shadow: inset 0 1px 3px rgba(161, 193, 6, 0.75);
+}
+
+p.error-text {
+	text-align: right;
+	font-style: italic;
+	margin-bottom: -10px;
+	padding: 0 15px;
+}

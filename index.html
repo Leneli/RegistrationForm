@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+
+	<script src="js/jquery-3.1.0.js"></script>
+
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- for IE -->
+	<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+
+				<div class="form">
+
+					<h2>Форма регистрации</h2>
+
+					<form class="form-horizontal" id="register">
+
+						<div class="form-group">
+							<label for="inputName" class="col-sm-3 control-label">Имя: </label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="inputName" name="inputName" placeholder="Ваше имя">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputLogin" class="col-sm-3 control-label">Логин: </label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="inputLogin" name="inputLogin" placeholder="Ваш логин">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail" class="col-sm-3 control-label">Email: </label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Ваш Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword1" class="col-sm-3 control-label">Пароль:</label>
+							<div class="col-sm-9">
+								<input type="password" class="form-control" id="inputPassword1" name="inputPassword1" placeholder="Укажите пароль">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword2" class="col-sm-3 control-label">Пароль: </label>
+							<div class="col-sm-9">
+								<input type="password" class="form-control" id="inputPassword2" name="inputPassword2" placeholder="Повторите пароль">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-9">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" id="check" name="check"> Правила прочитаны
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-12 text-center">
+
+								<!-- Удалить предложение, когда все поля пройдут валидацию, и кнопка регистрации станет активна -->
+								<p id="text-end" class="text-danger">Чтобы зарегистрироваться, корректно заполните форму!</p>
+
+								<button type="submit" class="btn btn-success" disabled>Зарегистрироваться</button>
+								<button type="reset" class="btn btn-default">Сбросить</button>
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/register.js"></script>
+</body>
+
+</html>

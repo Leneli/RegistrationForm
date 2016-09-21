@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+
+	<script src="js/jquery-3.1.0.js"></script>
+
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- for IE -->
+	<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+
+				<div class="form">
+
+					<h2>Форма входа</h2>
+
+					<form class="form-horizontal" id="singin-form">
+
+						<div class="form-group">
+							<label for="inputLogin" class="col-sm-3 control-label">Логин/Email: </label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="log" name="log" placeholder="Ваш логин или Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword1" class="col-sm-3 control-label">Пароль:</label>
+							<div class="col-sm-9">
+								<input type="password" class="form-control" id="pas" nane="pass" placeholder="Укажите пароль">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<p class='error-text text-danger'></p>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-12 text-right">
+								<button type="button" class="btn btn-success" id="login" disabled>Войти</button>
+								<button type="reset" class="btn btn-default">Сбросить</button>
+								<a href="/" class="btn btn-link">Зарегистрироваться</a>
+							</div>
+						</div>
+
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="js/singin.js"></script>
+</body>
+
+</html>
